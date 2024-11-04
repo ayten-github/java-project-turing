@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS users
+CREATE TABLE users
 (
     id         SERIAL PRIMARY KEY,
     name       varchar(35)  NOT NULL UNIQUE,
@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS users
     password   varchar(30)  NOT NULL,
     updated_by int,
     bio        varchar(255)
-    );
+);
+
 CREATE TABLE post
 (
     id         SERIAL PRIMARY KEY,
@@ -66,3 +67,12 @@ VALUES (1, 1, 'Java', 100, '2024-11-11 12:32:29', 1, '2024-11-12 01:02:03', 1, 1
 INSERT INTO comment
 VALUES (1, 1, 'Great post on Java!', '2024-11-11 12:45:00', 1, 3),
        (2, 2, 'I love traveling too!', '2024-11-11 12:50:00', 2, 5);
+INSERT INTO post_like (user_id, post_id, created_at)
+VALUES (1, 1, '2022-09-04 21:44:31'),
+       (2, 1, '2024-03-10 19:33:22'),
+       (1, 2, '2023-01-12 18:57:10');
+INSERT INTO comment_like (user_id, comment_id, created_at)
+VALUES (1, 1, '2022-01-10 22:58:09'),
+       (2, 1, '2023-02-30 17:51:10'),
+       (1, 2, '2024-12-12 13:22:09'),
+       (2, 2, '2023-03-01 13:11:44');
