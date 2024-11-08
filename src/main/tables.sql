@@ -63,7 +63,7 @@ VALUES ('Anna', 'Illi', 'anli@example.com', '1999-11-12', 1, '2020-11-01 18:11:1
         'password121212', 2, 'Senior');
 INSERT INTO post
 VALUES (1, 1, 'Java', 100, '2024-11-11 12:32:29', 1, '2024-11-12 01:02:03', 1, 10),
-       (2, 2, 'Traveling', 200, '2024-11-11 12:33:40', 1, '2023- 12:13:15', 1, 5);
+       (2, 2, 'Traveling', 250, '2024-11-11 12:33:40', 1, '2023- 12:13:15', 1, 5);
 INSERT INTO comment
 VALUES (1, 1, 'Great post on Java!', '2024-11-11 12:45:00', 1, 3),
        (2, 2, 'I love traveling too!', '2024-11-11 12:50:00', 2, 5);
